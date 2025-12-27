@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham Blog Website</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+           max-width: 90vw;
+           padding: 2rem 1rem;
+           margin: 0 auto;
+           /* background-color: blue; */
+        }
+
+        .header{
+            margin-bottom: 2.8rem;
+        }
+        .header_title{
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+            line-height: 2rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        
+        
+        .hearder_desc{
+            max-width: 550px;
+            font-weight: 500;
+            text-align: center;
+            color: rgb(98, 93, 93);
+            margin: 0 auto;
+        }
+
+        .main_container{
+            display: grid;
+            gap: 1.5rem;
+            position: relative;
+            /* max-width: ; */
+            /* min-width: 70vw; */
+
+            grid-template-columns: repeat(4, 1fr);
+                /* grid-template-columns: repeat(auto-fit, minmax(350px, 400px)); */
+            justify-content: center;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        
+        .card_container{
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgb(95, 93, 93);
+            border-radius: 5px;
+            /* overflow: hidden; */
+            /* max-width: 2rem;
+            max-height: 4rem; */
+        }
+        .card_img_container{
+            position: relative;
+            overflow: hidden;
+            height: 14rem;
+        }
+        .card_image{
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        .card_title_container{
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* text-align: left; */
+            padding: 1rem;
+
+        }
+        .card_container:hover .card_image{
+            transform:scale(1.1);
+            transition-duration: 200ms;
+        }
+        .card_title{
+            font-size: 1rem;
+            font-weight:600;
+            line-height: 1.5rem;
+            margin-bottom: 0.3rem;
+            color: rgb(25,23,23);
+        }
+        .card_title_anchor:hover .card_title {
+            color: rgb(56, 120, 142);
+        }
+
+        .card_description{
+            color: rgb(104, 99, 99);
+            font-size: 1rem;
+        }
+
+        .card_footer_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: 1rem;
+        }
+
+        .authur_container{
+            display: flex;
+            align-items: center;
+            /* margin: 1rem; */
+            justify-content: space-around;
+            gap: 1rem;
+        }
+        .authur_avatar_container{
+            background-color:blue;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 10rem;
+        }
+        /* .authur_avatar_container .authur_avatar{
+            width: 3rem;
+        } */
+         .authur_name{
+            color: rgb(8, 8, 181);
+         }
+         .blog_date{
+            color: rgb(40, 39, 39);
+         }
+
+         .authur_info_container{
+            display: flex;
+            flex-direction: column;
+         }
+        .card_tag_container{
+            height:2rem;
+            width: 7rem;
+            display: flex;
+            align-items: center;
+            color: rgb(40, 39, 39);
+            justify-content: center;
+            border: 1px solid rgb(210, 205, 205);
+            border-radius: 5px;
+        }
+        .card_tag_container:hover {
+            border: 1px solid rgb(119, 113, 113);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="header_title">Shubham Blogs</h1>
+            <p class="hearder_desc">Utilize this space to incorporate a captivating subheading crafted by Chatgpt , adding depth and intigue to your blog</p>
+        </div>
+
+        
+        <main class="main_container">
+            <!-- card 1 start -->
+
+            <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- card 1 end -->
+            
+            <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+
+                  <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+                  <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+                  <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+                  <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+                  <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+
+                  <div class="card_container">
+                <a href="#" class="card_img_container ">
+                    <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64"  alt="card 1 Image" class="card_image" loading="lazy">
+                </a>
+
+                <div class="card_title_container">
+                    <a href="#" class="card_title_anchor" >
+                        <h2 class="card_title">New Gadgets released</h2>
+                    </a>
+                    <p class="card_description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita in animi delectus amet.
+                    </p>
+                </div>
+
+                <div class="card_footer_container">
+                    <div class="authur_container">
+                        <div class="authur_avatar_container">
+                            <img src="https://api.dicebear.com/7.x/notionists/svg?seed=John?size=64" loading="lazy" class="authur_avatar" alt="avatar 1">
+                        </div>
+                        <div class="authur_info_container">
+                            <span class="authur_name">John Doe</span>
+                            <span class="blog_date">Sept 10,2022</span>
+                        </div>
+
+                        
+                    </div>
+                    <div class="card_tag_container">
+                        <span>Technology</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+         
+    </div>
+</body> 
+</html>
