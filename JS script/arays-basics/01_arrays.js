@@ -240,3 +240,21 @@
 // }
 
 // removeDuplicate([1,2,2,3,1])
+
+
+//primitives are copy by value and non-primitives are copy by reference
+
+// const a= 80;
+// const b = a;
+// console.log(b)
+// console.log(a)
+// b = 90
+
+// let a= 80;
+// let b = a;
+// console.log(b)
+// console.log(a)
+// b = 90
+
+// console.log(b)
+// console.log(a)
