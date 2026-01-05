@@ -77,18 +77,36 @@
 // user.greeting ()
 // user2.greeting()
 
-const obj = {
-    name : "shubham"
-}
+// const obj = {
+//     name : "shubham"
+// }
 
-// obj.role = "mern dev"
-const {name : newuser,role:newrole="Developer"} = obj
+// // obj.role = "mern dev"
+// const {name : newuser,role:newrole="Developer"} = obj
 
 // console.log(newuser)
 // console.log(role)
 
 
 
-console.log(obj)
-console.log(newrole)
+// console.log(obj)
+// console.log(newrole)
 
+
+let users = [
+  { name: "Amit", age: 21, isActive: true },
+  { name: "Sneha", age: 17, isActive: false },
+  { name: "Rahul", age: 25, isActive: true },
+  { name: "Neha", age: 16, isActive: true }
+];
+
+// let result = users.filter((user)=> user.age>=18&& user.isActive=== true)
+
+// let result = users.map((user)=> user.name)
+
+let result = users.filter((user)=> user.isActive).map((user)=>user.name)
+
+
+
+
+console.log(result)
